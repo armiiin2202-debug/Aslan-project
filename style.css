@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Навигация */
+nav {
+    background: #fff;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 3px solid black;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    color: grey;
+    box-shadow: 4px 4px 5px 1px grey;
+    border: 3px solid grey;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: darkgrey;
+}
+
+/* Шапка */
+header {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right,#000000, grey, white);
+    color: white;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+header span {
+    color: grey;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: grey;
+    box-shadow: 9px 9px 5px 1px black;
+}
+
+/* Секции */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* Сетка проектов */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    height: 200px;
+    position: relative;
+}
+
+.project-img1{
+    position: absolute;
+    top: 10px;
+    left: 75px;
+}
+
+.project-1 {
+    text-decoration: none;
+    color: black
+}
+
+.card-content {
+    padding: 20px;
+}
+
+/* Форма */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: #333;
+    color: white;
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 768px) {
+    header h1 { font-size: 2.5rem; }
+    nav ul { display: none; } /* Для простоты скрываем меню на мобильных */
+}
