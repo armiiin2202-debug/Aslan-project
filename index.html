@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="fonts.googleapis.com" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Портфолио</a>
+            <ul>
+                <li><a href="#about">О себе</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Главный экран -->
+    <header>
+        <div class="container">
+            <h1>Привет, я <span>Гериханов Аслан</span></h1>
+            <p>Веб-разработчик / Дизайнер / Творец</p>
+            <a href="#projects" class="btn">Посмотреть работы</a>
+        </div>
+    </header>
+
+    <!-- Секция Проекты -->
+    <section id="projects" class="container">
+        <h2 class="section-title">Мои Проекты</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-img"> <img class="project-img1" style="width:200px; height:200px" src="https://static.tildacdn.com/tild6338-6430-4438-b565-633339353738/1677474176_papik-pro.png"> </div>
+                <div class="card-content">
+                    <b><a class="project-1" style="font-size:20px" href="https://gerikhanovaslan.tilda.ws/fast-foodinstruction">fast food. Рецеаты бургеров</a></b>
+                    <p>Сайт, сделанный на конструкторе Tilda.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"> <img class="project-img1" style="width:200px; height:200px" src="https://images.steamusercontent.com/ugc/2464121890874336007/71A3CA914F7BF08A7833189CB4D9C0B87C8ACCD8/?imw=512&amp;imh=512&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true"> </div>
+                <div class="card-content">
+                    <b><a class="project-1" style="font-size:20px" href="https://www.figma.com/design/kM89aavenBQ52kWdodRR4x/Rteam-%D0%A1%D0%BA%D0%B0%D1%87%D0%B0%D1%82%D1%8C-%D0%B8%D0%B3%D1%80%D1%83?node-id=0-1&t=gGCX2DW8mVRGNS3K-1">RTeam</a></b>
+                    <p>Макет сайта, сделанный на Figma</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img"> <img class="project-img2" style="width:400px; height:200px" src="https://mars.algoritmika.org/uploads/2020/12/fireworks-2731725_1920_0_1607673819.jpg"> </div>
+                <div class="card-content">
+                    <b><a class="project-1" style="font-size:20px" href="https://nadvilboa.github.io/4-4-1/">Fantastic Party</a></b>
+                    <p>Сайт магазина фейерверков</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция Контакты -->
+    <section id="contact" class="container">
+        <h2 class="section-title">Связаться со мной</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="email" placeholder="Ваш Email" required>
+            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Все права защищены</p>
+    </footer>
+
+</body>
+</html>
